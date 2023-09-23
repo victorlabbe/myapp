@@ -1,0 +1,70 @@
+ion-toollbar{
+    background-color: var(--ion-color-mycolor);
+}
+
+.btn{
+    background-color: var(--ion-color-Mycolor-shade );
+    color: white;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;    
+}
+
+#container{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.text{
+    text-align: center;
+    background-color: aquamarine;
+    padding-top: 20px;
+    left: 10px;
+    right: 10px;
+
+}
+.textVid{
+    text-align: center;    
+    padding-top: 20px;
+    padding-bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+}
+.vidTuto1{
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    right: 20px;
+    top: 20%;
+    transform: translateY(-50%);
+}
+.vidTuto2{
+    text-align: center;
+    position: absolute;
+    left: 120px;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+}
+.vidTuto3{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.vidTuto4{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 80%;
+    transform: translateY(-50%);;
+
+}

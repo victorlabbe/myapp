@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>asociados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div >  
+    <ion-header >
+      <ion-toolbar>
+        <ion-title>
+          Lista de Asociados
+        </ion-title>         
+      </ion-toolbar>      
+      </ion-header>
+
+    <ion-item id="Lista" *ngFor="let user of users">
+      <ion-avatar slot="start">
+        <img src="../../assets/fotos/{{user.image}}">
+      </ion-avatar>
+      <ion-label>
+        <h2 >{{user.name}}</h2>
+        <h3>{{user.state}}</h3>
+        <p>{{user.description}}</p>
+      </ion-label>
+    </ion-item>
+ 
+
+  </div>
+
+   <div id="boton">
+      <button ion-button (click)="goToHome()" class="btn">Go to Home</button>
+    </div>
+    <img id="img" src="../../assets/fotos/logo2.png" alt="" width="200">
+    
+</ion-content>
