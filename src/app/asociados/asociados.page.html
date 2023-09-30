@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>asociados</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista de asociados </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,15 +11,11 @@
 <ion-content [fullscreen]="true">
 
   <div >  
-    <ion-header >
-      <ion-toolbar>
-        <ion-title>
-          Lista de Asociados
-        </ion-title>         
-      </ion-toolbar>      
-      </ion-header>
+    
 
-    <ion-item id="Lista" *ngFor="let user of users">
+
+    <ion-list *ngIf="permission">
+      <ion-item id="Lista" *ngFor="let user of users">
       <ion-avatar slot="start">
         <img src="../../assets/fotos/{{user.image}}">
       </ion-avatar>
@@ -26,9 +25,9 @@
         <p>{{user.description}}</p>
       </ion-label>
     </ion-item>
- 
-
+    </ion-list>
   </div>
+  <ion-label *ngIf="!permission">No tienes permisos para ver asociados</ion-label>
 
    <div id="boton">
       <button ion-button (click)="goToHome()" class="btn">Go to Home</button>

@@ -12,12 +12,14 @@ import { map } from 'rxjs/operators';
 export class AsociadosPage implements OnInit {
 
   users: any = [];
+  permission: boolean = false
 
   constructor(
     private router: Router,
     private http: HttpClient) { }
 
   ngOnInit() {
+    this.permission = false;
     console.log("Holaaaa")
     this.getUsers().subscribe(res=>{
       console.log("Res", res)

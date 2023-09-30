@@ -1,29 +1,70 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons icon="log-in" slot="end">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="bienvenidos">
+    <h1>Bienvenidos A Enegy Vibes</h1>
+  </div>
   
-  <div id="container">
-    <button ion-button [routerLink]="['/reservas']"class="btn">Go to Reservas</button>
-  </div>
-  <div id="container2">
-    <button ion-button [routerLink]="['/login']"class="btn">Go to login</button>
-  </div>
-  <div id="container3">
-    <button ion-button [routerLink]="['/dietas']"class="btn">Go to Dietas</button>
-  </div>
-  <div id="container4">
-    <button ion-button [routerLink]="['/pago']"class="btn">Go to Pagos</button>
-  </div>
-  <div id="container5">
-    <button ion-button [routerLink]="['/tutoriales']"class="btn">Go to tutoriales</button>
-  </div>
-  <div id="container6">
-    <button ion-button [routerLink]="['/asociados']"class="btn">Go to asociados</button>
-  </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="container2">
+            <button ion-button [routerLink]="['/reservas']"class="btn">
+              <ion-icon slot="start" name="calendar"></ion-icon> Reservas</button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div id="container2">
+            <button ion-button [routerLink]="['/checkin']"class="btn">
+              <ion-icon slot="start" name="walk-outline"></ion-icon>Check_in</button>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div id="container3">
+            <button ion-button [routerLink]="['/dietas']"class="btn">
+              <ion-icon slot="start" name="fast-food"></ion-icon> Dietas</button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div id="container4">
+            <button ion-button [routerLink]="['/pago']"class="btn">
+              <ion-icon slot="start" name="card"></ion-icon> Pagos</button>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div id="container5">
+            <button ion-button [routerLink]="['/tutoriales']"class="btn">
+              <ion-icon slot="start" name="videocam"></ion-icon> Tutoriales</button>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div id="container6">
+            <button ion-button [routerLink]="['/asociados']"class="btn">
+              <ion-icon slot="start" name="people"></ion-icon> Asociados</button>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+      
+      
+      
+      
+      
+    </ion-grid>
+    
+  
+  
     
 
 </ion-content>

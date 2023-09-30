@@ -1,23 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="Mycolor">
-    <ion-title>login 1</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-<div id="img2">
-  <img  src="../../assets/fotos/logo2.png" alt="" width="220">
-  <img  src="../../assets/fotos/logo.jpg" alt="" width="220">
-  <img  src="../../assets/fotos/" alt="" width="220">
+
+
+<div class="image">
+  <div class="titulo">  
+    <h1>
+      <b>
+        <i>
+          Energy Vibes
+        </i>   
+      </b>
+      </h1>
+    <ion-card >
+  <ion-card-header [translucent]="true">
+    <ion-card-title>Login</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="container">
+    <form [formGroup]="formularioLogin">
+      <ion-item>        
+        <ion-label position="floating">Nombre de usuaio</ion-label>
+        <ion-input formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+        <div>
+          <h4 [routerLink]="['/recuperar']" class="hover" >Recuperar Contraseña</h4>          
+        </div>      
+    </form>
+        <br>
+        <button ion-button (click)="ingresar()" class="btn">Ingresar</button>
+  </ion-card-content>
+ </ion-card>   
+ 
+  </div>    
 </div>
-  
-
-
-
-
-
-  <div id="container">
-    <button ion-button (click)="goToHome()" class="btn">Go to Home</button>
-  </div>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
