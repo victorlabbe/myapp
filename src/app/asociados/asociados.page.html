@@ -10,15 +10,11 @@
 
 <ion-content [fullscreen]="true">
 
-
 <div id="map"></div>
 
 
 
   <div >  
-    
-
-
     <ion-list *ngIf="permission">
       <ion-item id="Lista" *ngFor="let user of users">
       <ion-avatar slot="start">
@@ -37,7 +33,10 @@
    <div id="boton">
       <button ion-button (click)="goToHome()" class="btn">Go to Home</button>
     </div>
-    <img id="img" src="../../assets/fotos/logo2.png" alt="" width="200">
+    <div class="image2">
+      <img id="img" src="../../assets/fotos/logo2.png" alt="" width="200">
 
+    </div>
+    
     
 </ion-content>

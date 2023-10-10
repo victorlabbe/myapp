@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AsociadosPageRoutingModule } from './asociados-routing.module';
 
 import { AsociadosPage } from './asociados.page';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AsociadosPageRoutingModule
+    AsociadosPageRoutingModule,
+    GoogleMapsModule
   ],
   declarations: [AsociadosPage]
 })
